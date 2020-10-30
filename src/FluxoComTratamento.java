@@ -27,8 +27,8 @@ public class FluxoComTratamento {
     private static void metodo2() {
         System.out.println("Ini do metodo2");
 
-       ArithmeticException excption = new ArithmeticException("deu errado 2");
-       throw excption;
+       //ArithmeticException excption = new ArithmeticException("deu errado 2");
+       throw new ArithmeticException("deu errado 2");
 
       //    System.out.println("Fim do metodo2");
     }
