@@ -1,3 +1,10 @@
+package br.com.bytebank.Bank.testes;
+
+
+import br.com.bytebank.Bank.Models.CalculaImposto;
+import br.com.bytebank.Bank.Models.ContaCorrente;
+import br.com.bytebank.Bank.Models.SeguroDeVida;
+
 public class TesteInterface {
 
     public static void main(String[] args) {

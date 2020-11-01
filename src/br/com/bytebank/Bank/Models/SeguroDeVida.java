@@ -1,3 +1,5 @@
+package br.com.bytebank.Bank.Models;
+
 public class SeguroDeVida implements Tributavel{
 
     private double saldo;

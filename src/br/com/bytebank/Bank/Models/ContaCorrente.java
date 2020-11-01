@@ -1,3 +1,5 @@
+package br.com.bytebank.Bank.Models;
+
 public class ContaCorrente extends Conta implements Tributavel {
 
     private CalculaImposto calculaImposto;
@@ -21,7 +23,7 @@ public class ContaCorrente extends Conta implements Tributavel {
 
 
     @Override
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SaldoInsuficienteException {
         super.sacar(valor + 0.2);
     }
 

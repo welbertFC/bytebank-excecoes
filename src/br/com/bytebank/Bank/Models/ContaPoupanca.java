@@ -1,3 +1,5 @@
+package br.com.bytebank.Bank.Models;
+
 public class ContaPoupanca extends Conta {
 
     public ContaPoupanca(double saldo, int agencia, int numero, Cliente titular) {

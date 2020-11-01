@@ -1,3 +1,5 @@
+package FluxoException;
+
 public class Fluxo {
 
     public static void main(String[] args) {
@@ -29,8 +31,7 @@ public class Fluxo {
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
             //int a = 1 /0;
-            Conta c = null;
-            c.depositar(200);
+
             
         }
         System.out.println("Fim do metodo2");

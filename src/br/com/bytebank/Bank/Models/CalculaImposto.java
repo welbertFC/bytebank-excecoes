@@ -1,4 +1,6 @@
-public class CalculaImposto {
+package br.com.bytebank.Bank.Models;
+
+public class   CalculaImposto {
 
     private  double totalImposto;
 

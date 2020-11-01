@@ -1,6 +1,8 @@
+package br.com.bytebank.Bank.Models;
+
 public abstract class Conta {
 
-    protected double saldo;
+    double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -21,17 +23,26 @@ public abstract class Conta {
     public abstract void depositar(final double valor);
 
 
-    public void sacar(final double valor) {
+    public void sacar(final double valor) throws SaldoInsuficienteException {
 
+        if(this.saldo < valor){
+            throw new SaldoInsuficienteException("Saldo " + this.saldo + "valor " + valor);
+
+        }else {
+            this.saldo -= valor;
+        }
+
+        /*
         if (valor >= this.saldo) {
             System.out.println("Não possui saldo suficiente seu saldo é: " + saldo);
         } else {
 
             this.saldo = this.saldo - valor;
         }
+        */
     }
 
-    public boolean transfere(final double valor, final Conta destino) {
+    public boolean transfere(final double valor, final Conta destino) throws SaldoInsuficienteException {
         if (this.saldo >= valor) {
             sacar(valor);
             destino.depositar(valor);
