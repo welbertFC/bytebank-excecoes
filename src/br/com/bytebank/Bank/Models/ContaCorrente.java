@@ -39,4 +39,10 @@ public class ContaCorrente extends Conta implements Tributavel {
     }
 
 
+    public String toString(){
+        return "Numero da Conta " + super.getNumero() + " Agencia " + super.getAgencia();
+    }
+
 }
+
+

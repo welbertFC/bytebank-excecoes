@@ -8,7 +8,14 @@ public abstract class Conta {
     private Cliente titular;
     private static int total;
 
-
+    /**
+     * Construtor Conta
+     *
+     * @param saldo
+     * @param agencia
+     * @param numero
+     * @param titular
+     */
     public Conta(double saldo, int agencia, int numero, Cliente titular) {
         Conta.total++;
         this.saldo = saldo;
@@ -22,6 +29,12 @@ public abstract class Conta {
 
     public abstract void depositar(final double valor);
 
+    /**
+     * valor precisa ser maior que o saldo
+     *
+     * @param valor
+     * @throws SaldoInsuficienteException
+     */
 
     public void sacar(final double valor) throws SaldoInsuficienteException {
 

@@ -1,11 +1,19 @@
 package br.com.bytebank.Bank.Models;
 
+/**
+ * Classe do cliente
+ *
+ * @author Welbert
+ * @version 0.1
+ *
+ */
 public class Cliente {
 
     private String nome;
     private String cpf;
     private String profissao;
     private int telefone;
+
 
     public String getNome() {
         return nome;
