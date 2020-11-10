@@ -123,4 +123,12 @@ public abstract class Conta {
         return Conta.total;
 
     }
+
+    public  boolean equals(Object ref){
+        Conta conta = (Conta) ref;
+        if(this.agencia != conta.agencia || this.numero != conta.numero ){
+            return false;
+        }else
+            return true;
+    }
 }

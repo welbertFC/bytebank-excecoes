@@ -4,7 +4,7 @@ import br.com.bytebank.Bank.Models.Cliente;
 import br.com.bytebank.Bank.Models.ContaCorrente;
 import br.com.bytebank.Bank.Models.ContaPoupanca;
 
-public class Teste {
+public class TesteReferencias {
 	public static void main(String[] args) {
 //		System.out.println("x");
 //		System.out.println(3);
